@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*{font-family:'Source Sans Pro', sans-serif;text-align:center}
+body{height:100vh;background:url(https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop) no-repeat 50% 50%;background-size:cover}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.container{display:flex;height:100vh;justify-content:center;align-items:center;flex-direction:column}
+.box__wrapper{width:80vw;padding:10%;border-radius:10vw;background-color:#ffffff;background-color:rgba( 255, 255, 255, 0.5 )}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.title{font-size:56px;font-family:'Sunflower', sans-serif}
+.subtitle__today--temp{font-family:'Noto Sans KR', sans-serif}
+.box__temp{box-sizing:border-box;font-size:24px;font-weight:500;vertical-align:top}
+.subtitle{box-sizing:border-box;font-family:'Noto Sans KR', sans-serif;vertical-align:top}
+p{margin:0 !important;font-size:22px}
 
-.App-link {
-  color: #61dafb;
-}
+.box__buttons{padding-top:50px}
+.button__city{margin:1em;padding:1em;font-weight:600;font-family:'Sunflower', sans-serif !important}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 로딩시 */
+.w-100{display:flex;justify-content:center;align-items:center}
+
+@media screen and (max-width :430px) {
+  .box__temp{font-size:5.6vw}
+  p{font-size:5vw}
 }
